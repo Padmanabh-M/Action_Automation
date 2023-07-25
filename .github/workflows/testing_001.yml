@@ -38,5 +38,5 @@ jobs:
       - name: Log into development registry
         if: ${{ contains(github.ref_name, 'main') }}
         run: |
-          echo github.ref_name 
+          echo ${{ github.ref_name }}
           echo Executing for main
